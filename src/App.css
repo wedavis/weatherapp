@@ -1,5 +1,89 @@
-.App {
-  text-align: center;
-  height: 100%;
+:root{
+  --section-overlay: rgba(134, 134, 134, 0.7);
 }
+.App {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+ max-width: 800px;
+ margin: auto;
+ height: 100%;
+   
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-direction: column;
+ padding: 1rem;
+   }
+/* Top  */
+
+.section {
+ width: 100%;
+ padding: 1rem;
+ border-radius: 0.4rem;
+ color: white;
+   }
+   
+   .section_inputs, .section_temperature {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+ background-color: var(--section-overlay);
+   }
+   
+   .section_inputs>input {
+ border: 0.8px solid white;
+ border-radius: 0.4rem;
+ background-color: transparent;
+ color: white;
+ padding: 0.5rem;
+ font-size: 20px;
+ font-weight: 200;
+   }
+   
+   .section_inputs>input:focus {
+ outline: none;
+   }
+   
+   .section_inputs>button {
+ padding: 10px 10px;
+ border: none;
+ border-radius: 00.4rem;
+ font-size: 20px;
+ font-weight: 500;
+ background-color: rgb(0, 101, 102);
+   }
+   
+   .section_inputs>button:hover {
+ cursor: pointer;
+ background-color: lightgray;
+   }
+   
+   .icon {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+   }
+   
+   .icon>h3 {
+ font-size: 15px;
+ font-weight: 200;
+ text-transform: capitalize;
+ animation: fadeIn .5s;
+   }
+   @keyframes fadeIn {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+     }
+   .temperature>h1 {
+ font-size: 60px;
+   }
+
+
 
